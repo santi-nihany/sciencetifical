@@ -1,0 +1,11 @@
+.btn-header{
+    border: 1px solid ;
+    border-radius: 1.25rem;
+    padding: 0.5rem 2rem;
+}
+
+.item-section {
+    border: 1px solid;
+    border-radius: 2.5rem;
+    gap: 4.81rem
+}
