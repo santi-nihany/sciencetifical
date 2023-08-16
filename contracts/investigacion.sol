@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.0; // ultima version es 0.8.4
 
 contract SurveyContract {
     // Estructura de pregunta, puede ser multiple choice o abierta
     struct Question {
         string questionText;        // Texto de la pregunta
-        string type_of_question;    // Tipo de prsegunta: "multiplechoice" u "open"
+        string type_of_question;    // Tipo de pregunta: "multiplechoice" u "open"
         string[] options;           // Opciones para preguntas de opción múltiple
         uint256[] voteCounts;       // Recuento de votos para cada opción
     }
