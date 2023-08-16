@@ -16,7 +16,7 @@ export default function Landing(){
                     </h1>
                     <h1 className={`font-[700] pb-2 ${raleway.className}`}>, but colaborative</h1>
             </div>
-            {/* <Image src='/images/landing.svg' width={500} height={500} /> */}
+            { <Image src='/images/landing.svg' width={500} height={500} /> }
             
         </section>
     )
