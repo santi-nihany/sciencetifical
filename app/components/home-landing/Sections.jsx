@@ -1,5 +1,5 @@
-import { Raleway } from 'next/font/google'
 import Image from 'next/image';
+import { Raleway } from 'next/font/google'
 
 const raleway = Raleway({
     weight:[
@@ -38,7 +38,7 @@ export default function Sections(){
 
             {info.map((item,index)=>{
                 return(
-                    <div className="item-section flex p-[3.1rem]" key={index} id={item.id} style={{color:item.color}}>
+                    <div className="item-section gap-[4.81rem] flex p-[3.1rem]" key={index} id={item.id} style={{color:item.color}}>
                                 <div className="grid gap-3.5">
                                     <h3 className="w-fit text-2xl text-primary rounded-xl px-2 self-center" style={{backgroundColor:item.color}}>{item.title}</h3>
                                     <p className={raleway.className}>{item.description}</p>

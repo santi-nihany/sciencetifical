@@ -2,10 +2,33 @@ import Image from "next/image";
 import "@/styles/home.css"
 import Link from "next/link";
 
-export default function HeaderHome(){
+export default function HeaderHome({auth}){
     return(
         <nav className="flex justify-between mx-10 mt-10">
             <Image src="/images/logo_header.svg" alt="Logo Scientifical" width={200} height={100} />
+            {auth ? (
+                <ul className="flex px-10 gap-[3rem] items-center text-secondary">
+                <li>
+                    <Link href="/">
+                    <h2>Home</h2>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/review">
+                    <h2>Review</h2>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/lab">
+                    <h2>Lab</h2>
+                    </Link>
+                </li>
+                <li>
+                    <button  className="btn-header text-secondary font-bold">Log out</button>
+                </li>
+            </ul>
+            ):(
+
             <ul className="flex px-10 gap-[3rem] items-center text-secondary">
                 <li>
                     <Link href="/#why">
@@ -33,6 +56,9 @@ export default function HeaderHome(){
                     </Link>
                 </li>
             </ul>
+            )
+                
+            }
         </nav>
     )
 }
