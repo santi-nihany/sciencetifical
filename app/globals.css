@@ -13,3 +13,7 @@ body {
     background: #2B1F2D;
     font-family: 'Regarn-Light';
 }
+
+html{
+    scroll-behavior: smooth !important;
+}
