@@ -54,7 +54,7 @@ export default function HeaderHome({auth}){
                 </li>
                 <li>
                     <Link href="/sign-up">
-                    <button href="/sign-up" className="btn-header text-secondary font-bold">Sign Up</button>
+                    <button href="/sign-up" className="btn-header text-secondary font-bold">Sign Up :D</button>
                     </Link>
                 </li>
             </ul>
