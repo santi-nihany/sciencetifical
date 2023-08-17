@@ -14,6 +14,10 @@ body {
     font-family: 'Regarn-Light';
 }
 
+.font-regarn {
+  font-family: 'Regarn-Light';
+}
+
 html{
     scroll-behavior: smooth !important;
 }

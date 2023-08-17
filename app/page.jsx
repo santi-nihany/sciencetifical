@@ -5,7 +5,7 @@ import CreateProject from './components/home-res/CreateProject'
 
 
 export default function Home() {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   const researcher = true;
   return (
     <div>
