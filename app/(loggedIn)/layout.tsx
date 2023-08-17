@@ -1,4 +1,3 @@
-"use client";
 import HeaderHome from "../components/home-landing/HeaderHome";
 import type { Metadata } from "next";
 
