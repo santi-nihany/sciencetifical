@@ -8,6 +8,7 @@ import "@/styles/takestudy.css";
 import Image from "next/image";
 import Link from "next/link";
 import { Raleway } from 'next/font/google'
+import EthicsForm from "@/app/components/formularios/Ethics";
 
 const raleway = Raleway({
     weight:[
@@ -34,7 +35,7 @@ export default function TakeStudy({ params: { itemId } }) {
     else {
       return (
         <div>
-          <h1>Admin</h1>
+          <EthicsForm />
         </div>
       )
     }

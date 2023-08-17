@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function HeaderHome({auth}){
     return(
-        <nav className="flex justify-between mx-10 mt-10">
+        <nav className="flex justify-between mx-10 mt-10 relative">
             <Image src="/images/logo_header.svg" alt="Logo Scientifical" width={200} height={100} />
             {auth ? (
                 <ul className="flex px-10 gap-[3rem] items-center text-secondary">
@@ -47,9 +47,9 @@ export default function HeaderHome({auth}){
                     </Link>
                 </li>
                 <li>
-                   {/* <Link href="/login"> */}
+                   <Link href="/login"> 
                         <button  className="btn-header bg-secondary text-primary font-bold">Log in</button>
-                    {/* </Link> */}
+                    </Link>
                 </li>
                 <li>
                     <Link href="/sign-up">

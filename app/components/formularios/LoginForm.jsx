@@ -1,8 +1,8 @@
 import { signIn } from "next-auth/react";
 
-export default function Userform() {
+export default function LoginForm() {
   return(
-    <div className="TakeStudy">
+    <div className="TakeStudy2">
       <div className="div">
         <div className="section">
           <div className="div-register-layout">
@@ -10,30 +10,20 @@ export default function Userform() {
               <div className="span">
                 <div className="group">
                   <p className="heading-researcher">
-                    <span className="text-wrapper">Hey </span>
-                    <span className="text-wrapper-2">you</span>
-                    <span className="text-wrapper">!</span>
+                    <span className="text-wrapper">Nice to see </span>
+                    <span className="text-wrapper-2">you </span>
+                    <span className="text-wrapper">again!</span>
                   </p>
                   <p className="we-are-glad-you">
                     <span className="text-wrapper-3">
-                      We are glad you wanna help us making science :)
-                      <br />
-                      <br />
-                      As we want to preserve{" "}
-                    </span>
-                    <span className="text-wrapper-4">participants</span>
-                    <span className="text-wrapper-3">
-                      {" "}
-                      anonymity,
-                      <br />
-                      we use a Proof of Personhood protocol to verify you are a real human.{" "}
+                     To log in, we use a Proof of Personhood protocol to verify you are a real human.
                     </span>
                   </p>
                 </div>
               </div>
             </div>
             <div>
-            <button  className="button text-wrapper-5" onClick={()=>signIn()}>Sign in</button>
+            <button  className="button text-wrapper-5" onClick={()=>signIn()}>Log in</button>
             </div>
             <div className="div-body">
               <div className="p-terms-and-privacy">
