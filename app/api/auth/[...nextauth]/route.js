@@ -1,6 +1,6 @@
 /*import { PrismaAdapter } from '@next-auth/prisma-adapter';
 import { PrismaClient } from '@prisma/client';*/
-import { FirestoreAdapter } from "@auth/firebase-adapter";
+import { FirestoreAdapter } from '@auth/firebase-adapter'
 import { firestore } from "lib/firestore";
 import NextAuth from "next-auth";
 import { initializeApp } from "firebase/app";
@@ -35,7 +35,7 @@ const handler = NextAuth({
           },
         },
       ],
-      adapter: FirestoreAdapter(firestore),
+      adapter: FirestoreAdapter(firebase.firestore())
   });
 
   export { handler as GET, handler as POST };
