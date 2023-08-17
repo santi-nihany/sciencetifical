@@ -1,7 +1,6 @@
 /*import { PrismaAdapter } from '@next-auth/prisma-adapter';
 import { PrismaClient } from '@prisma/client';*/
-import { FirestoreAdapter } from '@auth/firebase-adapter'
-import { firestore } from "lib/firestore";
+import { FirestoreAdapter } from '@next-auth/firebase-adapter'
 import NextAuth from "next-auth";
 import { initializeApp } from "firebase/app";
 
