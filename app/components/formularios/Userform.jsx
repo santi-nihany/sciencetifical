@@ -33,7 +33,7 @@ export default function Userform() {
               </div>
             </div>
             <div>
-            <button  className="button text-wrapper-5" onClick={()=>signIn("https://id.worldcoin.org/.well-known/openid-configuration", { callbackUrl: '/research' })}>Sign in</button>
+            <button  className="button text-wrapper-5" onClick={()=>signIn("worldcoin", { callbackUrl: '/research' })}>Sign in</button>
             </div>
             <div className="div-body">
               <div className="p-terms-and-privacy">
