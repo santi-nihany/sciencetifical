@@ -1,7 +1,7 @@
 "use client";
 import { Raleway } from "next/font/google";
 import Image from "next/image";
-import { db } from "../../../firebaseConfig";
+import { db } from "../../firebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { useMoralis, useWeb3Contract } from "react-moralis";

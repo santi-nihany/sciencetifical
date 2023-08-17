@@ -1,6 +1,7 @@
 import Landing from "../components/home-landing/Landing";
 import Sections from "../components/home-landing/Sections";
 import CreateProject from "../components/home-res/CreateProject";
+import Info from "../components/home-landing/Info";
 
 export default function Home() {
   const isAuthenticated = false;
@@ -20,6 +21,7 @@ export default function Home() {
       ) : (
         <>
           <Landing />
+          <Info />
           <Sections />
         </>
       )}

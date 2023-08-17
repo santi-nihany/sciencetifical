@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { useMoralis, useWeb3Contract } from "react-moralis";
 import { ConnectButton } from "@web3uikit/web3";
 import platformAbi from "@/constants/platformAbi.json";
+import { parseUnits } from "ethers";
 
 const raleway = Raleway({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -39,12 +40,13 @@ export default function Research({ params: { id } }) {
   const { runContractFunction } = useWeb3Contract();
   async function handleBounty(data) {
     console.log("Approving...");
-    const price = ethers.utils.parseUnits(data, "ether").toString();
+    const price = parseUnits("0.1", "ether").toString();
 
     const approveOptions = {
       abi: platformAbi,
       contractAddress: ADDRESS,
       functionName: "fundBounty",
+      msgValue: price,
       params: {},
     };
 
@@ -146,7 +148,7 @@ export default function Research({ params: { id } }) {
               <ConnectButton moralisAuth={true} />
               {item.approved ? null : account ? (
                 <button
-                  onClick={handleBounty(item.bounty)}
+                  onClick={() => handleBounty(item.bounty)}
                   className="bg-secondary text-primary font-bold rounded-full py-2 mx-10 "
                 >
                   Approve project
