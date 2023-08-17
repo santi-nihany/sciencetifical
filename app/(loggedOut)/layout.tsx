@@ -1,8 +1,6 @@
 "use client";
-import HeaderHome from "./components/home-landing/HeaderHome";
-import "./globals.css";
+import HeaderHome from "../components/home-landing/HeaderHome";
 import type { Metadata } from "next";
-import { MoralisProvider } from "react-moralis";
 
 export const metadata: Metadata = {
   title: "Sciencetifical",
@@ -16,10 +14,9 @@ export default function RootLayout({
 }) {
   const isAuthenticated = false;
   return (
-    <html lang="en">
-      <body>
-        <MoralisProvider initializeOnMount={false}>{children}</MoralisProvider>
-      </body>
-    </html>
+    <div>
+      <HeaderHome auth={isAuthenticated} />
+      {children}
+    </div>
   );
 }

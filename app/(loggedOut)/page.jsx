@@ -1,9 +1,9 @@
-import Landing from "./components/home-landing/Landing";
-import Sections from "./components/home-landing/Sections";
-import CreateProject from "./components/home-res/CreateProject";
+import Landing from "../components/home-landing/Landing";
+import Sections from "../components/home-landing/Sections";
+import CreateProject from "../components/home-res/CreateProject";
 
 export default function Home() {
-  const isAuthenticated = true;
+  const isAuthenticated = false;
   const researcher = true;
   return (
     <div>

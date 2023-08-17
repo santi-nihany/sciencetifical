@@ -2,7 +2,7 @@
 import { useState, useRef } from "react";
 import { Raleway } from "next/font/google";
 import Image from "next/image";
-import { db } from "../firebaseConfig";
+import { db } from "../../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 
 const raleway = Raleway({
@@ -73,11 +73,11 @@ export default function CreateResearch() {
         description: descriptionRef.current.value,
         problem: problemRef.current.value,
         innovation: innovationRef.current.value,
-        schedule: [
-          scheduleRef1.current.value,
-          scheduleRef2.current.value,
-          scheduleRef3.current.value,
-        ],
+        // schedule: [
+        //   scheduleRef1.current.value,
+        //   scheduleRef2.current.value,
+        //   scheduleRef3.current.value,
+        // ],
         grant: grantRef.current.value,
         bounty: bountyRef.current.value,
         file: "https://firebasestorage.googleapis.com/v0/b/science-tifical.appspot.com/o/researchs%2FTornado%20Cash%20Whitepaper.pdf?alt=media&token=e8637900-baa6-4bc1-93e0-ca4196fcf9e3",
@@ -171,7 +171,7 @@ export default function CreateResearch() {
                 required
               />
             </div>
-            <div>
+            {/* <div>
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Could you tell us about your project schedule?*
               </label>
@@ -201,7 +201,7 @@ export default function CreateResearch() {
                   ref={scheduleRef3}
                 />
               </div>
-            </div>
+            </div> */}
             <div>
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 If you are looking for a grant, how much do you need?*
