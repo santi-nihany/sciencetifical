@@ -39,11 +39,13 @@ const handler = NextAuth({
           clientSecret: process.env.WLD_CLIENT_SECRET,
           idToken: true,
           profile(profile) {
+              console.log(profile);
             return {
               id: profile.sub,
-              name: profile.sub,
+              name: profile.name,
               credentialType: profile["https://id.worldcoin.org/beta"].credential_type,
             }
+
           },
         },
       ],
