@@ -1,7 +1,6 @@
-import HeaderHome from "./components/home-landing/HeaderHome";
 import "./globals.css";
 import type { Metadata } from "next";
-import { MoralisProvider } from "react-moralis";
+import Providers from "./components/providers";
 
 export const metadata: Metadata = {
   title: "Sciencetifical",
@@ -17,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <MoralisProvider initializeOnMount={false}>{children}</MoralisProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
