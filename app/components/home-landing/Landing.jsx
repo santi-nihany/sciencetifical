@@ -1,5 +1,7 @@
 import { Raleway } from 'next/font/google'
 import Image from 'next/image';
+import Explanation from "../components/home-landing/Explanation";
+import data from "../components/home-landing/data_exp"; 
 
 const raleway = Raleway({
     weight:[
