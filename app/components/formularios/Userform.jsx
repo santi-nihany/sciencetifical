@@ -33,7 +33,7 @@ export default function Userform() {
               </div>
             </div>
             <div>
-            <button  className="button text-wrapper-5" onClick={()=>signIn()}>Sign in</button>
+            <button  className="button text-wrapper-5" onClick={()=>signIn(wellKnown, { callbackUrl: '/research' })}>Sign in</button>
             </div>
             <div className="div-body">
               <div className="p-terms-and-privacy">
