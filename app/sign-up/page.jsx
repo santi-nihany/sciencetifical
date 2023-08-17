@@ -40,7 +40,7 @@ export default function SignUp(){
                 {roles.map((item,index)=>{
                 return(
                     <div key={index} id={item.id}>
-                        <Link href={`/sign-up?=${item.id}`}>
+                        <Link href={`/optionslogin/${item.id}`}>
                             <div className="flex flex-col items-center rounded-xl p-[2.8rem] gap-[0.6rem] w-[16rem]" style={{backgroundColor:item.color}} >
                                 <Image src={item.image} alt={item.name} width={100} height={100}/>
                                 <h2 className={`self-center font-[700] text-[1.4rem] ${raleway.className}`}>{item.name}</h2>

@@ -1,0 +1,447 @@
+.TakeStudy {
+    background-color: #2b1f2d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .TakeStudy .div {
+    background-color: #2b1f2d;
+    border: 1px none;
+    height: 931px;
+    position: relative;
+    width: 1460px;
+  }
+  
+  .TakeStudy .banner {
+    height: 52px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 1460px;
+  }
+  
+  .TakeStudy .section {
+    align-items: flex-start;
+    background-color: #72cff6;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 31px;
+    left: 459px;
+    padding: 20px 40px;
+    position: absolute;
+    top: 243px;
+  }
+  
+  .TakeStudy .div-register-layout {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 450px;
+    position: relative;
+  }
+  
+  .TakeStudy .heading {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    margin-left: -4.5px;
+    margin-right: -4.5px;
+    position: relative;
+    width: 459px;
+  }
+  
+  .TakeStudy .span {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    margin-left: -33px;
+    margin-right: -33px;
+    padding: 0px 54.91px 0px 56.09px;
+    position: relative;
+  }
+  
+  .TakeStudy .group {
+    height: 184px;
+    margin-right: -4px;
+    position: relative;
+    width: 418px;
+  }
+  
+  .TakeStudy .heading-researcher {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 42px;
+    left: 154px;
+    letter-spacing: 0;
+    line-height: 42px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .TakeStudy .text-wrapper {
+    font-weight: 500;
+  }
+  
+  .TakeStudy .text-wrapper-2 {
+    font-family: "Regarn-Light", Helvetica;
+    font-weight: 300;
+  }
+  
+  .TakeStudy .we-are-glad-you {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    height: 135px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 27px;
+    position: absolute;
+    text-align: center;
+    top: 49px;
+    width: 414px;
+  }
+  
+  .TakeStudy .text-wrapper-3 {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 27px;
+  }
+  
+  .TakeStudy .text-wrapper-4 {
+    font-weight: 700;
+  }
+  
+  .TakeStudy .button {
+    align-items: center;
+    background-color: #2b1f2d;
+    border-radius: 10px;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    margin-left: -0.5px;
+    margin-right: -0.5px;
+    padding: 14.5px 194.07px 15.5px 194.93px;
+    position: relative;
+    width: 451px;
+  }
+  
+  .TakeStudy .text-wrapper-5 {
+    color: #72cff6;
+    font-family: "Raleway", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-left: -22px;
+    margin-right: -22px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .TakeStudy .div-body {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 28px;
+    position: relative;
+  }
+  
+  .TakeStudy .p-terms-and-privacy {
+    height: 48px;
+    position: relative;
+    width: 450px;
+  }
+  
+  .TakeStudy .by-continuing-you {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    height: 48px;
+    left: 22px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    top: -2px;
+    width: 406px;
+  }
+  
+  .TakeStudy .text-wrapper-6 {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  
+  .TakeStudy .div-links {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 3.56px;
+    justify-content: center;
+    padding: 0px 110.91px 1px 109.53px;
+    position: relative;
+  }
+  
+  .TakeStudy .already-have-an {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+
+  
+  .TakeStudy2 {
+    background-color: #2b1f2d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .TakeStudy2 .div {
+    background-color: #2b1f2d;
+    border: 1px none;
+    height: 931px;
+    position: relative;
+    width: 1460px;
+  }
+  
+  .TakeStudy2 .banner {
+    height: 52px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 1460px;
+  }
+  
+  .TakeStudy2 .section {
+    align-items: flex-start;
+    background-color: #EFADF9;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 31px;
+    left: 459px;
+    padding: 20px 40px;
+    position: absolute;
+    top: 243px;
+  }
+  
+  .TakeStudy2 .div-register-layout {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 450px;
+    position: relative;
+  }
+  
+  .TakeStudy2 .heading {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    margin-left: -4.5px;
+    margin-right: -4.5px;
+    position: relative;
+    width: 459px;
+  }
+  
+  .TakeStudy2 .span {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    margin-left: -33px;
+    margin-right: -33px;
+    padding: 0px 54.91px 0px 56.09px;
+    position: relative;
+  }
+  
+  .TakeStudy2 .group {
+    height: 184px;
+    margin-right: -4px;
+    position: relative;
+    align-items: center;
+    width: 418px;
+  }
+  
+  .TakeStudy2 .heading-researcher {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 42px;
+    letter-spacing: 0;
+    line-height: 42px;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .TakeStudy2 .text-wrapper {
+    font-weight: 500;
+  }
+  
+  .TakeStudy2 .text-wrapper-2 {
+    font-family: "Regarn-Light", Helvetica;
+    font-weight: 300;
+  }
+  
+  .TakeStudy2 .we-are-glad-you {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    height: 135px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 27px;
+    position: absolute;
+    text-align: center;
+    top: 49px;
+    width: 414px;
+  }
+  
+  .TakeStudy2 .text-wrapper-3 {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 27px;
+  }
+  
+  .TakeStudy2 .text-wrapper-4 {
+    font-weight: 700;
+  }
+  
+  .TakeStudy2 .button {
+    align-items: center;
+    background-color: #2b1f2d;
+    border-radius: 10px;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    margin-left: -0.5px;
+    margin-right: -0.5px;
+    padding: 14.5px 194.07px 15.5px 194.93px;
+    position: relative;
+    width: 451px;
+  }
+  
+  .TakeStudy2 .text-wrapper-5 {
+    color: #EFADF9;
+    font-family: "Raleway", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-left: -22px;
+    margin-right: -22px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .TakeStudy2 .div-body {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 28px;
+    position: relative;
+  }
+  
+  .TakeStudy2 .p-terms-and-privacy {
+    height: 48px;
+    position: relative;
+    width: 450px;
+  }
+  
+  .TakeStudy2 .by-continuing-you {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    height: 48px;
+    left: 22px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    top: -2px;
+    width: 406px;
+  }
+  
+  .TakeStudy2 .text-wrapper-6 {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  
+  .TakeStudy2 .div-links {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 3.56px;
+    justify-content: center;
+    padding: 0px 110.91px 1px 109.53px;
+    position: relative;
+  }
+  
+  .TakeStudy2 .already-have-an {
+    color: #2b1f2d;
+    font-family: "Raleway", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+
+  

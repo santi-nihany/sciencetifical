@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "science-tifical",
+  "private_key_id": "26577691d5bfc5ae986ed026d537160728c66754",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDaRxt/8WF9L40G\n9s2i9p2imgUD11hHUXqHkarN4Mj3a4ZQgVRhj9rA1EyZrq/UytIaWy7wfFUrkMX8\nV8ipU0h4L58y6YHxtAv71FTbXtrolWuigSITxjtWMsuy49bVYLLdjnMta+g8Izoq\n4J2y8CvAqIjRbbmiS+8XJqciv0IS6jrcXsT724t2d96w8KuZb60hYIT5yNZx/Xwa\nEyKT4BFsP8b3nf0lfQBORSA4mg/Qk/3vsmMxzSU/LdQDnLkuEpSFIDe4ssedioyy\nKQ4GNDDUoJ/SwepFRuPCQHw4IvpE0nBfhpntqCOmuGz6vYZagNW/wJvOi6VM+Q8S\nxTe1Mvh5AgMBAAECggEAEZlSGkq39YPz9u/HPLBtnUKVzO177KQhIPUZtGe/TFOb\nDLqgtw0GMi3rzyhKfPmtXvqjGjisFUsi62mYgC561VXhnBU/qOE/ZhqEjPtk4wPJ\nHd0ThkyhVB3cVpwQIjwdr8dgefUNUGv2sKZTkK3UmT/9aAVUxkUhDdjL+P06spOR\n5MqAIXcvVNLO92AMOZilST2VkmCmrD46HZcMqrCMGZBQO99YRUEw6gKix/JBn4S2\nesi4WX7WjdKydAOexxaVXWLWBI5yBBJRqiEeiegdgUJWQm/y4OrTvXm/BR6wLEYY\nnYD8JBpam00P9xT5rdfYpCza5xJlU2KaeMBOL7eYUQKBgQD6ZpmG2LouHKcd3Kvj\ngRSTwExQZDW4Hhqa1fw2xvqzd2YiyiOP8Deof1qnCUYzHkmYcERISlI5xI2suXFr\n3D2CsfaCQ3yAcN0PtnLh5Ni9MYeoXORHHlYKbyc8Eix59FGSvWcIQJyprkyaldXw\nCnK4zWXw5ZF5Tb61VjI3TK5UHwKBgQDfKJ829/KfPWsFtqqKxuu4+REpijod5ZMd\n7pIQV8lTY63zbggVAOBFoWV+Ssu+YPp1BorUEAWsRUWjkr2siM2u/fs6PDbtttXo\nIPqMfg4oL2k4V+orikYV9454mMyUU0zi4pQnCY6K8aeLpyLZz02OghNliS5IZfEB\nyTrgoAzgZwKBgBU3dlC/sl7P3LUiCop3WHgAdjbllsun+VcfRISbrYhhWI0gFY1P\nrFehmtvGZGVWbqP090Qsz/THG74D5IFgIvIdBCcbcsQrS//V1LwhOOAm/zibzlfc\nUSwHKQrk+1HGCtdlJwLC/sM92o3Knlr9d6UC+l1EBmSB2uPgjtayr56/AoGAGf9u\nhQXf0yNhm3nLZn2EKrmBgVhkKuV6/Sq1A4hmoPtk4Y45DNFcT2BdJZhrIhPEOev4\nMnpnXsl3MnY++KG7bJ6ULRWkxI7fXrqw1bs9xPq5BGJhmo7yWU7M30nV05XcyDXj\nUqTvYUqD3WYsTjmzbF3FCrgvlymhKTcbT931ghMCgYAT6+ASD5TfhkpMrW48r6+t\nMkxwU9X5su+kxtMtALnNMw9G10Jxs9bQDMqvaGA8G0Seqpbkx3Z2F8Eqi9PBTW7G\nb3USwj25kXA3mGf6Wfkr50pTE9jIBwrmJAYvZfxaz/eK2dQorXOaS9b4x0CySQTb\ns9T7LWYs+QEWYog8o/6j6A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-5kdy0@science-tifical.iam.gserviceaccount.com",
+  "client_id": "106238099428750184010",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-5kdy0%40science-tifical.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
