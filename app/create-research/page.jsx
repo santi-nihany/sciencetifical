@@ -81,6 +81,10 @@ export default function CreateResearch() {
         grant: grantRef.current.value,
         bounty: bountyRef.current.value,
         file: "https://firebasestorage.googleapis.com/v0/b/science-tifical.appspot.com/o/researchs%2FTornado%20Cash%20Whitepaper.pdf?alt=media&token=e8637900-baa6-4bc1-93e0-ca4196fcf9e3",
+        thumbnail:
+          "https://firebasestorage.googleapis.com/v0/b/science-tifical.appspot.com/o/researchs%2Fthumbnail.svg?alt=media&token=8a024e0d-7d42-4d66-b28a-e0555c4abb1e",
+        approved: false,
+        date: new Date().toLocaleDateString(),
       };
       console.log(objeto);
       const collectionRef = collection(db, "researchs");

@@ -1,5 +1,10 @@
+"use client";
 import { Raleway } from "next/font/google";
 import Image from "next/image";
+import { db } from "../../firebaseConfig";
+import { collection, getDocs } from "firebase/firestore";
+import { useState, useEffect } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const raleway = Raleway({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -30,6 +35,25 @@ export default function Research() {
     date: "2021-10-10",
     thumbnail: "/images/thumb.svg",
   };
+
+  const [researchs, setResearchs] = useState([]);
+  const collectionRef = collection(db, "researchs");
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await getDocs(collectionRef);
+        const array = response.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        });
+        console.log(array);
+        setResearchs(array);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    fetchData();
+  }, []);
   return (
     <div
       className={`mt-10 flex mx-[15rem] mb-10 ${raleway.className} text-secondary`}
@@ -46,7 +70,7 @@ export default function Research() {
             width={30}
             height={30}
           />
-          <h3 className="mr-6">{item.researcher.name}</h3>
+          <h3 className="mr-6">Jhon Doe</h3>
           <h3>{item.date}</h3>
         </div>
         <Image
