@@ -1,12 +1,19 @@
-import { PrismaAdapter } from '@next-auth/prisma-adapter';
-import { PrismaClient } from '@prisma/client';
+/*import { PrismaAdapter } from '@next-auth/prisma-adapter';
+import { PrismaClient } from '@prisma/client';*/
+import { FirestoreAdapter } from "@auth/firebase-adapter";
+import { firestore } from "lib/firestore";
 import NextAuth from "next-auth";
+import { initializeApp } from "firebase/app";
 
-import EmailProvider from "next-auth/providers/email";
-import GitHubProvider from "next-auth/providers/github";
-import GoogleProvider from "next-auth/providers/google";
-
-const prisma = new PrismaClient();
+const firebaseConfig = {
+  apiKey: "AIzaSyDuoq4GeT8w8wRtXcbvv6iXxyvRZqgKh34",
+  authDomain: "science-tifical.firebaseapp.com",
+  projectId: "science-tifical",
+  storageBucket: "science-tifical.appspot.com",
+  messagingSenderId: "629132531147",
+  appId: "1:629132531147:web:48d6c19acc030e2646924e"
+};
+const app = initializeApp(firebaseConfig);
 
 const handler = NextAuth({
     providers: [
@@ -28,7 +35,7 @@ const handler = NextAuth({
           },
         },
       ],
-    adapter: PrismaAdapter(prisma),
+      adapter: FirestoreAdapter(firestore),
   });
 
   export { handler as GET, handler as POST };
