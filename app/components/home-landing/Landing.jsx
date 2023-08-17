@@ -1,7 +1,5 @@
 import { Raleway } from 'next/font/google'
 import Image from 'next/image';
-import Explanation from "../components/home-landing/Explanation";
-import data from "../components/home-landing/data_exp"; 
 
 const raleway = Raleway({
     weight:[
@@ -19,7 +17,6 @@ export default function Landing(){
                     </h1>
                     <h1 className={`font-[700] pb-2 ${raleway.className}`}>, but colaborative</h1>
             </div>
-
             <Image className="self-center w-full"alt="landing" src='/images/landing.svg' width={500} height={500} /> 
 
         </section>
