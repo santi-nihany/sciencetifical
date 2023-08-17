@@ -1,6 +1,8 @@
+'use client';
 import Image from "next/image";
 import "@/styles/home.css"
 import Link from "next/link";
+import { signIn } from "next-auth/react";
 
 export default function HeaderHome({auth}){
     return(
@@ -46,9 +48,9 @@ export default function HeaderHome({auth}){
                     </Link>
                 </li>
                 <li>
-                    <Link href="/login">
-                        <button  className="btn-header bg-secondary text-primary font-bold">Log in</button>
-                    </Link>
+                   {/* <Link href="/login"> */}
+                        <button  className="btn-header bg-secondary text-primary font-bold" onClick={()=>signIn()}>Log in</button>
+                    {/* </Link> */}
                 </li>
                 <li>
                     <Link href="/sign-up">
