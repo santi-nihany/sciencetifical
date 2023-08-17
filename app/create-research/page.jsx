@@ -89,6 +89,7 @@ export default function CreateResearch() {
           const res = await addDoc(collectionRef, objeto);
           // const res = await db.collection("researchs").add(objeto);
           console.log(res);
+          window.location.href = "/create-research/success";
         } catch (error) {
           console.log(error);
         }
