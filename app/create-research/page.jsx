@@ -1,8 +1,9 @@
 "use client";
-import { useState } from "react";
-import Header from "../components/Header";
+import { useState, useRef } from "react";
 import { Raleway } from "next/font/google";
 import Image from "next/image";
+import { db } from "../firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
 
 const raleway = Raleway({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -38,8 +39,62 @@ export default function CreateResearch() {
     }
   };
 
+  const titleRef = useRef(null);
+  const descriptionRef = useRef(null);
+  const problemRef = useRef(null);
+  const innovationRef = useRef(null);
+  const grantRef = useRef(null);
+  const bountyRef = useRef(null);
+  const scheduleRef1 = useRef(null);
+  const scheduleRef2 = useRef(null);
+  const scheduleRef3 = useRef(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    let ok =
+      titleRef.current.value &&
+      descriptionRef.current.value &&
+      problemRef.current.value &&
+      innovationRef.current.value &&
+      scheduleRef1.current.value &&
+      scheduleRef2.current.value &&
+      scheduleRef3.current.value &&
+      grantRef.current.value &&
+      bountyRef.current.value;
+    console.log(ok);
+
+    if (grantRef.current.value < 0 || bountyRef.current.value < 0) {
+      ok = false;
+    }
+
+    if (ok) {
+      let objeto = {
+        title: titleRef.current.value,
+        description: descriptionRef.current.value,
+        problem: problemRef.current.value,
+        innovation: innovationRef.current.value,
+        schedule: [
+          scheduleRef1.current.value,
+          scheduleRef2.current.value,
+          scheduleRef3.current.value,
+        ],
+        grant: grantRef.current.value,
+        bounty: bountyRef.current.value,
+        file: "https://firebasestorage.googleapis.com/v0/b/science-tifical.appspot.com/o/researchs%2FTornado%20Cash%20Whitepaper.pdf?alt=media&token=e8637900-baa6-4bc1-93e0-ca4196fcf9e3",
+      };
+      console.log(objeto);
+      const collectionRef = collection(db, "researchs");
+      async function pushData() {
+        try {
+          const res = await addDoc(collectionRef, objeto);
+          // const res = await db.collection("researchs").add(objeto);
+          console.log(res);
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      pushData();
+    }
   };
   return (
     <div className={raleway.className}>
@@ -52,7 +107,10 @@ export default function CreateResearch() {
             <h1 className="font-regarn pt-1 pl-2  font-[300]">research</h1>
             <h1 className={`font-[400] ${raleway.className}`}>!</h1>
           </div>
-          <form className="px-8 pt-6 pb-8 mb-4 grid gap-6">
+          <form
+            className="px-8 pt-6 pb-8 mb-3 grid gap-6"
+            onSubmit={handleSubmit}
+          >
             <div>
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Which is the title of your research?*
@@ -62,6 +120,8 @@ export default function CreateResearch() {
                 id="title"
                 type="text"
                 placeholder="Tell us what are you researching..."
+                required
+                ref={titleRef}
               />
             </div>
             <div>
@@ -74,6 +134,8 @@ export default function CreateResearch() {
                 id="description"
                 type="text"
                 placeholder="Write something cool here..."
+                ref={descriptionRef}
+                required
               />
             </div>
             <div>
@@ -86,6 +148,8 @@ export default function CreateResearch() {
                 id="problem"
                 type="text"
                 placeholder="Tell us about the problem you are solving..."
+                ref={problemRef}
+                required
               />
             </div>
             <div>
@@ -98,19 +162,40 @@ export default function CreateResearch() {
                 id="innovation"
                 type="text"
                 placeholder="Tell us how you impact..."
+                ref={innovationRef}
+                required
               />
             </div>
             <div>
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Could you tell us about your project schedule?*
               </label>
-              <textarea
-                rows={4}
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="schedule"
-                type="text"
-                placeholder="You could enumerate the schedule with bullet points..."
-              />
+              <div className="grid gap-2">
+                <input
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="step1"
+                  type="text"
+                  placeholder="Step 1..."
+                  required
+                  ref={scheduleRef1}
+                />
+                <input
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="step2"
+                  type="text"
+                  placeholder="Step 2..."
+                  required
+                  ref={scheduleRef2}
+                />
+                <input
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="step3"
+                  type="text"
+                  placeholder="Step 3..."
+                  required
+                  ref={scheduleRef3}
+                />
+              </div>
             </div>
             <div>
               <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -120,7 +205,10 @@ export default function CreateResearch() {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="grant"
                 type="number"
-                placeholder="Provide us the number without $..."
+                min={0}
+                placeholder="Provide us the number in ETH"
+                required
+                ref={grantRef}
               />
             </div>
             <div>
@@ -131,7 +219,10 @@ export default function CreateResearch() {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="bounty"
                 type="number"
-                placeholder="Provide us the number without $..."
+                min={0}
+                placeholder="Provide us the number in ETH"
+                required
+                ref={bountyRef}
               />
             </div>
             <div>
@@ -169,6 +260,7 @@ export default function CreateResearch() {
                         onChange={handleFile}
                         className="h-full w-full opacity-0 z-10 absolute cursor-pointer"
                         name="file"
+                        required
                       />
                       <div className="h-full w-full bg-gray-200 absolute z-1 flex justify-center items-center top-0 ">
                         <div className="flex flex-col">
@@ -231,7 +323,6 @@ export default function CreateResearch() {
             <div className="px-[0.5rem]">
               <button
                 type="submit"
-                onSubmit={handleSubmit}
                 className="w-full py-[0.5rem] px-[3rem] rounded rounded-xl bg-primary text-secondary"
               >
                 Upload
