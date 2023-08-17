@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Header from "../components/Header";
 import Link from "next/link";
 import { Raleway } from 'next/font/google'
 
@@ -33,8 +32,7 @@ export default function SignUp(){
     ];
     return(
         <div>
-            <Header/>
-            <div className="flex flex-col items-center text-secondary gap-[0.8rem] mt-20">
+            <div className="flex flex-col items-center text-secondary gap-[0.8rem] mt-16">
                 <h1 className="text-7xl">Welcome!</h1>
                 <h3 className="text-xl">First of all, which role represents you?</h3>
             </div>
@@ -52,7 +50,7 @@ export default function SignUp(){
                             )
                         })}
             </div>
-            <div className="flex text-secondary justify-center mt-10">
+            <div className="flex text-secondary justify-center mt-8 ">
                 <h3 className={`${raleway.className} text-lg`}>Already have an account? <Link className="font-[700]" href={"/login"}>Log in</Link></h3>
             </div>
         </div>

@@ -1,3 +1,4 @@
+import HeaderHome from './components/home-landing/HeaderHome';
 import './globals.css'
 import type { Metadata } from 'next'
 
@@ -11,9 +12,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const isAuthenticated = false;
   return (
     <html lang="en">
-      <body >{children}</body>
+      <body >
+        <HeaderHome auth={isAuthenticated}/>
+        {children}
+      </body>
     </html>
   )
 }
