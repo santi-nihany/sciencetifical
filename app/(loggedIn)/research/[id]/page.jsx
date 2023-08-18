@@ -139,8 +139,8 @@ export default function Research({ params: { id } }) {
             })}
           </div>
           <div className="grid  font-bold text-[1.25rem]">
-            <h2>Grant Request: $ {item.grant}</h2>
-            <h2>Bounty: $ {item.bounty}</h2>
+            <h2>Grant Request: {item.grant} ETH</h2>
+            <h2>Bounty: {item.bounty} ETH</h2>
           </div>
           <div className="flex justify-center mt-10">
             <div className="grid gap-[2rem]">

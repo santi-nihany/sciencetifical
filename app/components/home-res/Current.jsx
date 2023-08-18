@@ -63,7 +63,7 @@ export default function Current() {
         Current Research
       </h1>
 
-      <div className="flex flex-wrap ">
+      <div className="flex flex-wrap mb-10">
         {researchs.map((item, index) => (
           <Link key={index} href={`/research/${item.id}`}>
             <div key={index} className="w-1/2">
@@ -80,15 +80,14 @@ export default function Current() {
                   </div>
                 </div>
                 <div className="w-40 h-24 left-[20px] top-[179px] absolute">
-                  <div className="left-0 top-[88px] absolute text-gray-500 text-xs font-normal leading-3 tracking-wide">
-                    x Reviews • x/x stars
+                  <div className="left-0 top-[110px] absolute text-gray-500 text-xs font-normal leading-3 tracking-wide">
+                    10 Reviews • 4/5 stars
                   </div>
                   <div className="w-40 left-0 top-0 absolute text-fuchsia-300 text-base text-secondary font-bold leading-relaxed tracking-tight">
                     Research
                     <br />
-                    Title Lorem Ipsum
+                    <h3 className="text-sm w-full">{item.title}</h3>
                     <br />
-                    Lorem Ipsum
                   </div>
                 </div>
                 <div className="w-14 h-14 left-[179px] top-[137px] absolute">

@@ -26,9 +26,7 @@ export default function LoginForm() {
             <div>
               <button
                 className="button text-wrapper-5"
-                onClick={() =>
-                  signIn("worldcoin", { callbackUrl: "/research" })
-                }
+                onClick={() => signIn("worldcoin", { callbackUrl: "/" })}
               >
                 Log in
               </button>
